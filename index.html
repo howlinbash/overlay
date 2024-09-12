@@ -10,19 +10,50 @@
   <div class="status-bar">
     <div class="status-bar-content">
       <div class="status-left">
-        <span class="label">Stream No:</span>
-        <span>2.3</span>
+        <span>Stream No:</span>
+        <span class="value">2.3</span>
       </div>
       <div class="status-center">
-        <span id="time"></span>
+        <span id="time" class="value"></span>
       </div>
       <div class="status-right">
-        <span class="label">Locale:</span>
-        <span>FI</span>
+        <span>Locale:</span>
+        <span class="value">FI</span>
       </div>
     </div>
   </div>
-  <div class="music-stats">stats
+  <div class="music-stats">
+    <div class="music-stats-left">
+      <div>
+        <h3>Chat Commands</h3>
+        <table class="chat-table">
+          <tr>
+            <td class="code">!sl</td>
+            <td>Show song list</td>
+          </tr>
+          <tr>
+            <td class="code">!sr &lt;choice&gt;</td>
+            <td>Request song</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="music-stats-right">
+      <table class="music-table">
+        <tr>
+          <td>Songs</td>
+          <td>2,239</td>
+        </tr>
+        <tr>
+          <td>Crushed</td>
+          <td class="green">41</td>
+        </tr>
+        <tr>
+          <td>Busted</td>
+          <td class="red">1</td>
+        </tr>
+      </table>
+    </div>
   </div>
   <script>
     document.getElementById("time").textContent =
