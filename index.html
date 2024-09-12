@@ -22,14 +22,16 @@
       </div>
     </div>
   </div>
-    <script>
-      document.getElementById("time").textContent =
-        new Date().toLocaleTimeString('fi-FI', {
-          timeZone: 'Europe/Helsinki',
-          hour: '2-digit', 
-          minute: '2-digit', 
-          hour12: false
-        }).replace(/\./g, ':');
-    </script>
+  <div class="music-stats">stats
+  </div>
+  <script>
+    document.getElementById("time").textContent =
+      new Date().toLocaleTimeString('fi-FI', {
+        timeZone: 'Europe/Helsinki',
+        hour: '2-digit', 
+        minute: '2-digit', 
+        hour12: false
+      }).replace(/\./g, ':');
+  </script>
 </body>
 </html>

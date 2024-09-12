@@ -30,3 +30,15 @@ body {
 .label {
   color: white;
 }
+
+.music-stats {
+  position: absolute;
+  bottom: 10px;
+  left: 970px;
+  background: black;
+  opacity: 80%;
+  border: 2px solid #00F593;
+  height: 148px;
+  width: 480px;
+  padding: 10px;
+}
