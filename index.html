@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Howlin Overlay</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-bar-content">
+      <div class="status-left">
+        <span class="label">Stream No:</span>
+        <span>2.3</span>
+      </div>
+      <div class="status-center">
+        <span id="time"></span>
+      </div>
+      <div class="status-right">
+        <span class="label">Locale:</span>
+        <span>FI</span>
+      </div>
+    </div>
+  </div>
+    <script>
+      document.getElementById("time").textContent =
+        new Date().toLocaleTimeString('fi-FI', {
+          timeZone: 'Europe/Helsinki',
+          hour: '2-digit', 
+          minute: '2-digit', 
+          hour12: false
+        }).replace(/\./g, ':');
+    </script>
+</body>
+</html>
