@@ -32,7 +32,7 @@ body {
   color: #00F593;
 }
 
-.music-stats {
+.music-stats-container {
   position: absolute;
   bottom: 11px;
   left: 1025px;
@@ -41,8 +41,13 @@ body {
   border: 2px solid #00F593;
   height: 115px;
   width: 452px;
-  display: flex;
   font-size: 16px;
+}
+
+.music-stats {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 .music-stats-left {
