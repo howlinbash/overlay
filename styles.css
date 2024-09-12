@@ -33,12 +33,12 @@ body {
 
 .music-stats {
   position: absolute;
-  bottom: 10px;
-  left: 970px;
+  bottom: 11px;
+  left: 1025px;
   background: black;
   opacity: 80%;
   border: 2px solid #00F593;
-  height: 148px;
-  width: 480px;
+  height: 115px;
+  width: 452px;
   padding: 10px;
 }
