@@ -11,7 +11,7 @@
     <div class="status-bar-content">
       <div class="status-left">
         <span>Stream No:</span>
-        <span class="value">2.3</span>
+        <span class="value">6.0</span>
       </div>
       <div class="status-center">
         <span id="time" class="value"></span>
@@ -43,28 +43,32 @@
         <table class="music-table">
           <tr>
             <td>Songs</td>
-            <td>2,239</td>
+            <td>2,193</td>
           </tr>
           <tr>
             <td>Crushed</td>
-            <td class="green">41</td>
+            <td class="green">119</td>
           </tr>
           <tr>
             <td>Busted</td>
-            <td class="red">1</td>
+            <td class="red">4</td>
           </tr>
         </table>
       </div>
     </div>
   </div>
   <script>
-    document.getElementById("time").textContent =
-      new Date().toLocaleTimeString('fi-FI', {
-        timeZone: 'Europe/Helsinki',
-        hour: '2-digit', 
-        minute: '2-digit', 
-        hour12: false
-      }).replace(/\./g, ':');
+    function updateTime() {
+      document.getElementById("time").textContent =
+        new Date().toLocaleTimeString('fi-FI', {
+          timeZone: 'Europe/Helsinki',
+          hour: '2-digit', 
+          minute: '2-digit', 
+          hour12: false
+        }).replace(/\./g, ':');
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
   </script>
 </body>
 </html>
